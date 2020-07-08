@@ -1,4 +1,5 @@
 ﻿using System;
+using MVC.Controllers;
 
 namespace MVC
 {
@@ -6,7 +7,8 @@ namespace MVC
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProdutoController produtos = new ProdutoController();
+            produtos.Buscar("600");
         }
     }
 }
